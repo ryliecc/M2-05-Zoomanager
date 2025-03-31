@@ -25,4 +25,41 @@ class Zoo {
             animal.description()
         }
     }
+    
+    // Aufgabe 1.7 Zoobericht mit Filtermethoden
+    
+    func printAnimalNames() {
+        print("Die Namen der Tiere im Zoo \(name) sind:")
+        for animal in animals {
+            print(animal.name)
+        }
+    }
+    
+    func printAnimalsFromAge(startAge: Double) {
+        print("Die Tiere im Zoo \(name), die mindestens \(startAge) Jahre alt sind, sind:")
+        for animal in animals {
+            if animal.age >= startAge {
+                animal.description()
+            }
+        }
+    }
+    
+    func printEndangeredAnimals() {
+        print("Folgende Tiere im Zoo \(name) sind vom Aussterben bedroht:")
+        for animal in animals {
+            if animal.isEndangered {
+                animal.description()
+            }
+        }
+    }
+    
+    func filterSpecies(species: String) -> [Animal] {
+        var animalsWithSpecies: [Animal] = []
+        for animal in animals {
+            if animal.species == species {
+                animalsWithSpecies.append(animal)
+            }
+        }
+        return animalsWithSpecies
+    }
 }
