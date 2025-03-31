@@ -25,6 +25,22 @@ zoo1.description()
 
 // Aufgabe 1.5 TierInfo modellieren
 
-let animalInfo1 = AnimalInfo(weight: 220, animal: animal1)
+let animalInfo1: AnimalInfo = AnimalInfo(weight: 220, animal: animal1)
 
 animalInfo1.description()
+
+// Aufgabe 1.6 Referenztyp (Klasse) vs Wertetyp (Struct)
+
+var animalInfo2: AnimalInfo = animalInfo1
+animalInfo2.weight = 200
+
+print("Gewicht Instanz 1: \(animalInfo1.weight)\nGewicht Instanz 2: \(animalInfo2.weight)")
+
+let animal1Copy: Animal = animal1
+animal1Copy.age = 5.6
+print("Beschreibung Original:")
+animal1.description()
+print("Beschreibung Zoo:")
+zoo1.description()
+print("Beschreibung Kopie:")
+animal1Copy.description()
