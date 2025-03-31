@@ -22,4 +22,10 @@ class Animal {
     }
     
     // Notiz: automatisch generierter initializer hat auch isEndangered mit rein gepackt, habe ich aber wieder raus gelöscht, weil es ja einen default Wert gibt und es dementsprechend nicht immer nötig ist diesen Wert bei Initialisierung festzulegen
+    
+    // Aufgabe 1.4 Beschreibungs-Methoden definieren
+    
+    func description() {
+        print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht.")
+    }
 }

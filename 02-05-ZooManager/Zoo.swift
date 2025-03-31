@@ -16,4 +16,13 @@ class Zoo {
     init(name: String) {
         self.name = name
     }
+    
+    // Aufgabe 1.4 Beschreibungs-Methoden definieren
+    
+    func description() {
+        print("Der Zoo \(name) hat folgende Tiere:")
+        for animal in animals {
+            animal.description()
+        }
+    }
 }
