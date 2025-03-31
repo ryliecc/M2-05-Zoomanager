@@ -22,3 +22,9 @@ zoo1.animals = [animal1, animal2, animal3]
 
 animal1.description()
 zoo1.description()
+
+// Aufgabe 1.5 TierInfo modellieren
+
+let animalInfo1 = AnimalInfo(weight: 220, animal: animal1)
+
+animalInfo1.description()
