@@ -77,3 +77,9 @@ zoo1.animals.append(reptile1)
 zoo1.animals.append(mammal1)
 
 zoo1.description()
+
+// Aufgabe 2.4 Raubkatze
+
+let bigCat1: BigCat = BigCat(name: "Mufasa", age: 11, isEndangered: true, species: .africanLion, canRoar: true)
+zoo1.animals.append(bigCat1)
+bigCat1.description()
