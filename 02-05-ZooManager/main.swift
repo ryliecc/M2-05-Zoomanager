@@ -7,10 +7,10 @@ import Foundation
 
 // Aufgabe 1.2 Tier modellieren
 
-let animal1: Animal = Animal(name: "Simba", age: 5.4, species: "Afrikanischer Löwe")
+let animal1: Animal = Animal(name: "Simba", age: 5.4, species: .africanLion)
 animal1.isEndangered = true
-let animal2: Animal = Animal(name: "Timon", age: 9.5, species: "Erdmännchen")
-let animal3: Animal = Animal(name: "Pumba", age: 8.7, species: "Warzenschwein")
+let animal2: Animal = Animal(name: "Timon", age: 9.5, species: .meerkat)
+let animal3: Animal = Animal(name: "Pumba", age: 8.7, species: .warthog)
 
 // Aufgabe 1.3 Zoo modellieren
 
@@ -47,11 +47,11 @@ animal1Copy.description()
 
 // Aufgabe 1.7 Zoobericht mit Filtermethoden
 
-let animal4: Animal = Animal(name: "Nala", age: 4.9, species: "Afrikanischer Löwe")
+let animal4: Animal = Animal(name: "Nala", age: 4.9, species: .africanLion)
 animal4.isEndangered = true
-let animal5: Animal = Animal(name: "Kiara", age: 0.25, species: "Afrikanischer Löwe")
+let animal5: Animal = Animal(name: "Kiara", age: 0.25, species: .africanLion)
 animal5.isEndangered = true
-let animal6: Animal = Animal(name: "Zazu", age: 10, species: "Rotschnabeltoko")
+let animal6: Animal = Animal(name: "Zazu", age: 10, species: .redBilledToco)
 animal6.isEndangered = true
 
 zoo1.animals.append(animal4)
@@ -61,7 +61,7 @@ zoo1.animals.append(animal6)
 zoo1.printAnimalNames()
 zoo1.printAnimalsFromAge(startAge: 5)
 zoo1.printEndangeredAnimals()
-let lions: [Animal] = zoo1.filterSpecies(species: "Afrikanischer Löwe")
+let lions: [Animal] = zoo1.filterSpecies(species: .africanLion)
 print("Gefiltert nach Spezies Afrikanischer Löwe:")
 for animal in lions {
     animal.description()

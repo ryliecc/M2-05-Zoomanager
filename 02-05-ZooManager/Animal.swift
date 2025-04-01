@@ -13,9 +13,9 @@ class Animal {
     var name: String
     var age: Double
     var isEndangered: Bool = false
-    var species: String
+    var species: Species
     
-    init(name: String, age: Double, species: String) {
+    init(name: String, age: Double, species: Species) {
         self.name = name
         self.age = age
         self.species = species
@@ -26,6 +26,6 @@ class Animal {
     // Aufgabe 1.4 Beschreibungs-Methoden definieren
     
     func description() {
-        print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht.")
+        print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species.rawValue). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht.")
     }
 }

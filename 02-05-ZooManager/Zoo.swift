@@ -53,7 +53,7 @@ class Zoo {
         }
     }
     
-    func filterSpecies(species: String) -> [Animal] {
+    func filterSpecies(species: Species) -> [Animal] {
         var animalsWithSpecies: [Animal] = []
         for animal in animals {
             if animal.species == species {
