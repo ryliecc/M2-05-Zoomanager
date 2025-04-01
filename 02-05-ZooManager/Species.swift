@@ -12,4 +12,5 @@ enum Species: String {
     case meerkat = "Erdmännchen"
     case warthog = "Warzenschwein"
     case crocodile = "Krokodil"
+    case python = "Python"
 }

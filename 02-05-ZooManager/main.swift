@@ -83,3 +83,9 @@ zoo1.description()
 let bigCat1: BigCat = BigCat(name: "Mufasa", age: 11, isEndangered: true, species: .africanLion, canRoar: true)
 zoo1.animals.append(bigCat1)
 bigCat1.description()
+
+// Aufgabe 2.5 Schlange
+
+let snake1: Snake = Snake(name: "Kaa", age: 30, species: .python, isVenomous: false)
+zoo1.animals.append(snake1)
+snake1.description()
