@@ -11,4 +11,10 @@ import Foundation
 
 class Reptile: Animal {
     
+    // Aufgabe 2.3 Spezialisierung
+    
+    override func description() {
+        print("---Reptil---")
+        super.description()
+    }
 }

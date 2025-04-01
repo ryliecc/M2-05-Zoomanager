@@ -11,4 +11,10 @@ import Foundation
 
 class Mammal: Animal {
     
+    // Aufgabe 2.3 Spezialisierung
+    
+    override func description() {
+        print("---Säugetier---")
+        super.description()
+    }
 }

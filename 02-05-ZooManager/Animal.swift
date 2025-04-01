@@ -12,12 +12,13 @@ import Foundation
 class Animal {
     var name: String
     var age: Double
-    var isEndangered: Bool = false
+    var isEndangered: Bool
     var species: Species
     
-    init(name: String, age: Double, species: Species) {
+    init(name: String, age: Double, isEndangered: Bool = false, species: Species) {
         self.name = name
         self.age = age
+        self.isEndangered = isEndangered
         self.species = species
     }
     
