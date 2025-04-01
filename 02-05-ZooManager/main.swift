@@ -66,3 +66,8 @@ print("Gefiltert nach Spezies Afrikanischer Löwe:")
 for animal in lions {
     animal.description()
 }
+
+// Aufgabe 2.2 Vererbung: Tier als Superklasse
+
+let reptile1: Reptile = Reptile(name: "Kleiner Gator", age: 4, species: .crocodile)
+let mammal1: Mammal = Mammal(name: "Scar", age: 12, species: .africanLion)
