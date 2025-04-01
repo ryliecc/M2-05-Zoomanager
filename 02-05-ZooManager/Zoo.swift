@@ -62,4 +62,15 @@ class Zoo {
         }
         return animalsWithSpecies
     }
+    
+    // Aufgabe 2.6 as und is
+    
+    func printTerrarium() {
+        print("---Terrarium---")
+        for animal in animals {
+            if animal is Reptile {
+                animal.description()
+            }
+        }
+    }
 }

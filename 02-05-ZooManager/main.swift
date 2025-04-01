@@ -89,3 +89,7 @@ bigCat1.description()
 let snake1: Snake = Snake(name: "Kaa", age: 30, species: .python, isVenomous: false)
 zoo1.animals.append(snake1)
 snake1.description()
+
+// Aufgabe 2.6 as und is
+
+zoo1.printTerrarium()
