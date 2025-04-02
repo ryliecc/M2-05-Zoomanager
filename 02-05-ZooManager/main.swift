@@ -93,3 +93,10 @@ snake1.description()
 // Aufgabe 2.6 as und is
 
 zoo1.printTerrarium()
+
+// Aufgabe 3.1 Computed Properties rund um name
+
+print("Der Name von \(snake1.name) in Großbuchstaben ist \(snake1.upperCaseName)")
+print(snake1.descriptionShort)
+print("Der Name \(snake1.name) ist \(snake1.nameIsShort ? "" : "nicht ")kurz.")
+print("Der Name \(bigCat1.name) ist \(bigCat1.nameIsShort ? "" : "nicht ")kurz.")

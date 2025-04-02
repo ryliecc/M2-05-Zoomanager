@@ -29,4 +29,18 @@ class Animal {
     func description() {
         print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species.rawValue). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht.")
     }
+    
+    // Aufgabe 3.1 Computed Properties rund um name
+    
+    var upperCaseName: String {
+        name.uppercased()
+    }
+    
+    var descriptionShort: String {
+        "\(name), \(age) Jahre alt"
+    }
+    
+    var nameIsShort: Bool {
+        name.count <= 5
+    }
 }
