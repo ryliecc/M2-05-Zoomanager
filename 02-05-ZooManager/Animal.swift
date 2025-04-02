@@ -12,13 +12,15 @@ import Foundation
 class Animal {
     var name: String
     var age: Double
-    var isEndangered: Bool
+        // Aufgabe 3.3 Berechnen, ob ein Tier vom Aussterben bedroht ist
+    var isEndangered: Bool {
+        species.intValue < 105000
+    }
     var species: Species
     
-    init(name: String, age: Double, isEndangered: Bool = false, species: Species) {
+    init(name: String, age: Double, species: Species) {
         self.name = name
         self.age = age
-        self.isEndangered = isEndangered
         self.species = species
     }
     

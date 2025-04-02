@@ -14,7 +14,7 @@ class BigCat: Mammal {
     
     init(name: String, age: Double, isEndangered: Bool = false, species: Species, canRoar: Bool) {
         self.canRoar = canRoar
-        super.init(name: name, age: age, isEndangered: isEndangered, species: species)
+        super.init(name: name, age: age, species: species)
     }
     
     func roar() {
