@@ -29,7 +29,7 @@ class Animal {
     // Aufgabe 1.4 Beschreibungs-Methoden definieren
     
     func description() {
-        print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species.rawValue). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht. Diese Tierart hat eine durchschnittliche Lebenserwartung von \(species.lifeExpectancy) Jahren.")
+        print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species.rawValue). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht. Diese Tierart hat eine durchschnittliche Lebenserwartung von \(species.lifeExpectancy) Jahren. Dieses Tier ist \(isOld ? "" : "noch nicht sehr ")alt.")
     }
     
     // Aufgabe 3.1 Computed Properties rund um name
@@ -45,4 +45,11 @@ class Animal {
 //    var nameIsShort: Bool {
 //        name.count <= 5
 //    }
+    
+    // Aufgabe 3.5 Berechnen, ob ein Tier alt ist
+    
+    var isOld: Bool {
+        let oldAge: Double = Double(species.lifeExpectancy) / 100 * 75
+        return age >= oldAge
+    }
 }
