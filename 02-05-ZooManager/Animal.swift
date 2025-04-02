@@ -32,15 +32,15 @@ class Animal {
     
     // Aufgabe 3.1 Computed Properties rund um name
     
-    var upperCaseName: String {
-        name.uppercased()
-    }
-    
-    var descriptionShort: String {
-        "\(name), \(age) Jahre alt"
-    }
-    
-    var nameIsShort: Bool {
-        name.count <= 5
-    }
+//    var upperCaseName: String {
+//        name.uppercased()
+//    }
+//    
+//    var descriptionShort: String {
+//        "\(name), \(age) Jahre alt"
+//    }
+//    
+//    var nameIsShort: Bool {
+//        name.count <= 5
+//    }
 }
