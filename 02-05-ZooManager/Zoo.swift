@@ -24,6 +24,7 @@ class Zoo {
         for animal in animals {
             animal.description()
         }
+        print("Von \(animals.count) Tieren sind \(amountOfEndangeredAnimals) vom Aussterben bedroht!")
     }
     
     // Aufgabe 1.7 Zoobericht mit Filtermethoden
@@ -72,5 +73,17 @@ class Zoo {
                 animal.description()
             }
         }
+    }
+    
+    // 3.6 Anzahl der bedrohten Tiere im Zoo berechnen
+    
+    var amountOfEndangeredAnimals: Int {
+        var amount: Int = 0
+        for animal in animals {
+            if animal.isEndangered {
+                amount += 1
+            }
+        }
+        return amount
     }
 }
