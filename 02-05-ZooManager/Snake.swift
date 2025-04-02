@@ -12,9 +12,9 @@ import Foundation
 final class Snake: Reptile {
     var isVenomous: Bool
     
-    init(name: String, age: Double, species: Species, isVenomous: Bool) {
+    init(name: String, age: Double, species: Species, habitat: Habitat, isVenomous: Bool) {
         self.isVenomous = isVenomous
-        super.init(name: name, age: age, species: species)
+        super.init(name: name, age: age, species: species, habitat: habitat)
     }
     
     func bite() {

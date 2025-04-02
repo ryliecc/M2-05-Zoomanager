@@ -18,10 +18,11 @@ class Animal {
     }
     var species: Species
     
-    init(name: String, age: Double, species: Species) {
+    init(name: String, age: Double, species: Species, habitat: Habitat) {
         self.name = name
         self.age = age
         self.species = species
+        self.habitat = habitat
     }
     
     // Notiz: automatisch generierter initializer hat auch isEndangered mit rein gepackt, habe ich aber wieder raus gelöscht, weil es ja einen default Wert gibt und es dementsprechend nicht immer nötig ist diesen Wert bei Initialisierung festzulegen
@@ -29,7 +30,7 @@ class Animal {
     // Aufgabe 1.4 Beschreibungs-Methoden definieren
     
     func description() {
-        print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species.rawValue). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht. Diese Tierart hat eine durchschnittliche Lebenserwartung von \(species.lifeExpectancy) Jahren. Dieses Tier ist \(isOld ? "" : "noch nicht sehr ")alt.")
+        print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species.rawValue). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht. Diese Tierart hat eine durchschnittliche Lebenserwartung von \(species.lifeExpectancy) Jahren und ihr Lebensraum ist \(habitat.rawValue). Dieses Tier ist \(isOld ? "" : "noch nicht sehr ")alt.")
     }
     
     // Aufgabe 3.1 Computed Properties rund um name
@@ -52,4 +53,8 @@ class Animal {
         let oldAge: Double = Double(species.lifeExpectancy) / 100 * 75
         return age >= oldAge
     }
+    
+    // Aufgabe 2.7 Weitere Tiere
+    
+    var habitat: Habitat
 }

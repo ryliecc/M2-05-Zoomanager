@@ -7,17 +7,21 @@ import Foundation
 
 // Ablage für erstellte Instanzen
 
-let animal1: Animal = Animal(name: "Zazu", age: 10, species: .redBilledToco)
-let reptile1: Reptile = Reptile(name: "Kleiner Gator", age: 4, species: .crocodile)
-let mammal1: Mammal = Mammal(name: "Timon", age: 9.5, species: .meerkat)
-let mammal2: Mammal = Mammal(name: "Pumba", age: 8.7, species: .warthog)
+let animal1: Animal = Animal(name: "Zazu", age: 10, species: .redBilledToco, habitat: .savanna)
+let reptile1: Reptile = Reptile(name: "Kleiner Gator", age: 4, species: .crocodile, habitat: .swamp)
+let mammal1: Mammal = Mammal(name: "Timon", age: 9.5, species: .meerkat, habitat: .savanna)
+let mammal2: Mammal = Mammal(name: "Pumba", age: 8.7, species: .warthog, habitat: .savanna)
 let bigCat1: BigCat = BigCat(name: "Mufasa", age: 11, species: .africanLion, canRoar: true)
 let bigCat2: BigCat = BigCat(name: "Simba", age: 5.4, species: .africanLion, canRoar: true)
 let bigCat3: BigCat = BigCat(name: "Nala", age: 4.9, species: .africanLion, canRoar: true)
 let bigCat4: BigCat = BigCat(name: "Kiara", age: 0.25, species: .africanLion, canRoar: false)
 let bigCat5: BigCat = BigCat(name: "Scar", age: 12, species: .africanLion, canRoar: true)
-let snake1: Snake = Snake(name: "Kaa", age: 30, species: .reticulatedPython, isVenomous: false)
-let allAnimals: [Animal] = [animal1, reptile1, mammal1, mammal2, bigCat1, bigCat2, bigCat3, bigCat4, bigCat5, snake1]
+let snake1: Snake = Snake(name: "Kaa", age: 30, species: .reticulatedPython, habitat: .rainforest, isVenomous: false)
+let fish1: Fish = Fish(name: "Nemo", age: 6, species: .clownfish, habitat: .coralReef)
+let fish2: Fish = Fish(name: "Dory", age: 7, species: .regalBlueTang, habitat: .coralReef)
+let freshWaterFish1: FreshWaterFish = FreshWaterFish(name: "Cleo", age: 5, species: .goldfish)
+let tiger1: Tiger = Tiger(name: "Shere Khan", age: 10)
+let allAnimals: [Animal] = [animal1, reptile1, mammal1, mammal2, bigCat1, bigCat2, bigCat3, bigCat4, bigCat5, snake1, fish1, fish2, freshWaterFish1, tiger1]
 
 let zoo1: Zoo = Zoo(name: "Milele")
 
