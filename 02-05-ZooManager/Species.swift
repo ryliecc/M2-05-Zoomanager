@@ -12,7 +12,7 @@ enum Species: String {
     case meerkat = "Erdmännchen"
     case warthog = "Warzenschwein"
     case crocodile = "Krokodil"
-    case python = "Python"
+    case reticulatedPython = "Netzpython"
     
     // Aufgabe 3.3 Berechnen, ob ein Tier vom Aussterben bedroht ist
     
@@ -23,7 +23,7 @@ enum Species: String {
         case .meerkat: return 1500000
         case .warthog: return 250000
         case .crocodile: return 1000000
-        case .python: return 2000000
+        case .reticulatedPython: return 2000000
         }
     }
     
@@ -36,7 +36,7 @@ enum Species: String {
         case .meerkat: return 12
         case .warthog: return 15
         case .crocodile: return 70
-        case .python: return 25
+        case .reticulatedPython: return 25
         }
     }
 }

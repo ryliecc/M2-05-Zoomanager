@@ -12,7 +12,7 @@ import Foundation
 final class Snake: Reptile {
     var isVenomous: Bool
     
-    init(name: String, age: Double, isEndangered: Bool = false, species: Species, isVenomous: Bool) {
+    init(name: String, age: Double, species: Species, isVenomous: Bool) {
         self.isVenomous = isVenomous
         super.init(name: name, age: age, species: species)
     }

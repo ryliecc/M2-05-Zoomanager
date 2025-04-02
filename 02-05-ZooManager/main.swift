@@ -5,17 +5,30 @@
 
 import Foundation
 
-// Aufgabe 1.2 Tier modellieren
+// Ablage für erstellte Instanzen
 
-let animal1: Animal = Animal(name: "Simba", age: 5.4, species: .africanLion)
-let animal2: Animal = Animal(name: "Timon", age: 9.5, species: .meerkat)
-let animal3: Animal = Animal(name: "Pumba", age: 8.7, species: .warthog)
-
-// Aufgabe 1.3 Zoo modellieren
+let animal1: Animal = Animal(name: "Zazu", age: 10, species: .redBilledToco)
+let reptile1: Reptile = Reptile(name: "Kleiner Gator", age: 4, species: .crocodile)
+let mammal1: Mammal = Mammal(name: "Timon", age: 9.5, species: .meerkat)
+let mammal2: Mammal = Mammal(name: "Pumba", age: 8.7, species: .warthog)
+let bigCat1: BigCat = BigCat(name: "Mufasa", age: 11, species: .africanLion, canRoar: true)
+let bigCat2: BigCat = BigCat(name: "Simba", age: 5.4, species: .africanLion, canRoar: true)
+let bigCat3: BigCat = BigCat(name: "Nala", age: 4.9, species: .africanLion, canRoar: true)
+let bigCat4: BigCat = BigCat(name: "Kiara", age: 0.25, species: .africanLion, canRoar: false)
+let bigCat5: BigCat = BigCat(name: "Scar", age: 12, species: .africanLion, canRoar: true)
+let snake1: Snake = Snake(name: "Kaa", age: 30, species: .reticulatedPython, isVenomous: false)
+let allAnimals: [Animal] = [animal1, reptile1, mammal1, mammal2, bigCat1, bigCat2, bigCat3, bigCat4, bigCat5, snake1]
 
 let zoo1: Zoo = Zoo(name: "Milele")
 
-zoo1.animals = [animal1, animal2, animal3]
+let animalInfo1: AnimalInfo = AnimalInfo(weight: 220, animal: bigCat2)
+
+// Aufgabe 1.2 Tier modellieren
+// Instanzen verschoben
+
+// Aufgabe 1.3 Zoo modellieren
+
+zoo1.animals = allAnimals
 
 // Aufgabe 1.4 Beschreibungs-Methoden definieren
 
@@ -23,8 +36,7 @@ animal1.description()
 zoo1.description()
 
 // Aufgabe 1.5 TierInfo modellieren
-
-let animalInfo1: AnimalInfo = AnimalInfo(weight: 220, animal: animal1)
+// Instanz verschoben
 
 animalInfo1.description()
 
@@ -36,7 +48,7 @@ animalInfo2.weight = 200
 print("Gewicht Instanz 1: \(animalInfo1.weight)\nGewicht Instanz 2: \(animalInfo2.weight)")
 
 let animal1Copy: Animal = animal1
-animal1Copy.age = 5.6
+animal1Copy.age = 11
 print("Beschreibung Original:")
 animal1.description()
 print("Beschreibung Zoo:")
@@ -45,14 +57,7 @@ print("Beschreibung Kopie:")
 animal1Copy.description()
 
 // Aufgabe 1.7 Zoobericht mit Filtermethoden
-
-let animal4: Animal = Animal(name: "Nala", age: 4.9, species: .africanLion)
-let animal5: Animal = Animal(name: "Kiara", age: 0.25, species: .africanLion)
-let animal6: Animal = Animal(name: "Zazu", age: 10, species: .redBilledToco)
-
-zoo1.animals.append(animal4)
-zoo1.animals.append(animal5)
-zoo1.animals.append(animal6)
+// Instanzen verschoben
 
 zoo1.printAnimalNames()
 zoo1.printAnimalsFromAge(startAge: 5)
@@ -64,9 +69,7 @@ for animal in lions {
 }
 
 // Aufgabe 2.2 Vererbung: Tier als Superklasse
-
-let reptile1: Reptile = Reptile(name: "Kleiner Gator", age: 4, species: .crocodile)
-let mammal1: Mammal = Mammal(name: "Scar", age: 12, species: .africanLion)
+// Instanzen verschoben
 
 // Aufgabe 2.3 Spezialisierung
 
@@ -79,15 +82,13 @@ zoo1.animals.append(mammal1)
 zoo1.description()
 
 // Aufgabe 2.4 Raubkatze
+// Instanz verschoben
 
-let bigCat1: BigCat = BigCat(name: "Mufasa", age: 11, species: .africanLion, canRoar: true)
-zoo1.animals.append(bigCat1)
 bigCat1.description()
 
 // Aufgabe 2.5 Schlange
+// Instanz verschoben
 
-let snake1: Snake = Snake(name: "Kaa", age: 30, species: .python, isVenomous: false)
-zoo1.animals.append(snake1)
 snake1.description()
 
 // Aufgabe 2.6 as und is
