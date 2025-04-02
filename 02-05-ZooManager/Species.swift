@@ -26,4 +26,17 @@ enum Species: String {
         case .python: return 2000000
         }
     }
+    
+    // Aufgabe 3.4 Lebenserwartung berechnen
+    
+    var lifeExpectancy: Int {
+        switch self {
+        case .africanLion: return 14
+        case .redBilledToco: return 20
+        case .meerkat: return 12
+        case .warthog: return 15
+        case .crocodile: return 70
+        case .python: return 25
+        }
+    }
 }
