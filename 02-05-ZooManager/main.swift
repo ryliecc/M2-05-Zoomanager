@@ -36,8 +36,8 @@ zoo1.animals = allAnimals
 
 // Aufgabe 1.4 Beschreibungs-Methoden definieren
 
-animal1.description()
-zoo1.description()
+print(animal1)
+print(zoo1)
 
 // Aufgabe 1.5 TierInfo modellieren
 // Instanz verschoben
@@ -54,11 +54,11 @@ print("Gewicht Instanz 1: \(animalInfo1.weight)\nGewicht Instanz 2: \(animalInfo
 let animal1Copy: Animal = animal1
 animal1Copy.age = 11
 print("Beschreibung Original:")
-animal1.description()
+print(animal1)
 print("Beschreibung Zoo:")
-zoo1.description()
+print(zoo1)
 print("Beschreibung Kopie:")
-animal1Copy.description()
+print(animal1Copy)
 
 // Aufgabe 1.7 Zoobericht mit Filtermethoden
 // Instanzen verschoben
@@ -69,7 +69,7 @@ zoo1.printEndangeredAnimals()
 let lions: [Animal] = zoo1.filterSpecies(species: .africanLion)
 print("Gefiltert nach Spezies Afrikanischer Löwe:")
 for animal in lions {
-    animal.description()
+    print(animal)
 }
 
 // Aufgabe 2.2 Vererbung: Tier als Superklasse
@@ -77,23 +77,23 @@ for animal in lions {
 
 // Aufgabe 2.3 Spezialisierung
 
-reptile1.description()
-mammal1.description()
+print(reptile1)
+print(mammal1)
 
 zoo1.animals.append(reptile1)
 zoo1.animals.append(mammal1)
 
-zoo1.description()
+print(zoo1)
 
 // Aufgabe 2.4 Raubkatze
 // Instanz verschoben
 
-bigCat1.description()
+print(bigCat1)
 
 // Aufgabe 2.5 Schlange
 // Instanz verschoben
 
-snake1.description()
+print(snake1)
 
 // Aufgabe 2.6 as und is
 

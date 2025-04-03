@@ -11,8 +11,14 @@ import Foundation
 
 class Fish: Animal {
     
-    override func description() {
-        print("---Fisch---")
-        super.description()
+//    override func description() {
+//        print("---Fisch---")
+//        super.description()
+//    }
+    
+    // Aufgabe 4.1 CustomStringConvertible implementieren
+    
+    override var description: String {
+        return "---Fisch---\n\(super.description)"
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 
 // Aufgabe 1.2 Tier modellieren
 
-class Animal {
+class Animal: CustomStringConvertible {
     var name: String
     var age: Double
         // Aufgabe 3.3 Berechnen, ob ein Tier vom Aussterben bedroht ist
@@ -29,9 +29,9 @@ class Animal {
     
     // Aufgabe 1.4 Beschreibungs-Methoden definieren
     
-    func description() {
-        print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species.rawValue). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht. Diese Tierart hat eine durchschnittliche Lebenserwartung von \(species.lifeExpectancy) Jahren und ihr Lebensraum ist \(habitat.rawValue). Dieses Tier ist \(isOld ? "" : "noch nicht sehr ")alt.")
-    }
+//    func description() {
+//        print("Das Tier \(name) ist \(age) Jahre alt und von der Art \(species.rawValue). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht. Diese Tierart hat eine durchschnittliche Lebenserwartung von \(species.lifeExpectancy) Jahren und ihr Lebensraum ist \(habitat.rawValue). Dieses Tier ist \(isOld ? "" : "noch nicht sehr ")alt.")
+//    }
     
     // Aufgabe 3.1 Computed Properties rund um name
     
@@ -57,4 +57,10 @@ class Animal {
     // Aufgabe 2.7 Weitere Tiere
     
     var habitat: Habitat
+    
+    // Aufgabe 4.1 CustomStringConvertible implementieren
+    
+    var description: String {
+        return "Das Tier \(name) ist \(age) Jahre alt und von der Art \(species.rawValue). Es ist \(isEndangered ? "" : "nicht ")vom Aussterben bedroht. Diese Tierart hat eine durchschnittliche Lebenserwartung von \(species.lifeExpectancy) Jahren und ihr Lebensraum ist \(habitat.rawValue). Dieses Tier ist \(isOld ? "" : "noch nicht sehr ")alt."
+    }
 }

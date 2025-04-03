@@ -14,7 +14,7 @@ struct AnimalInfo {
     var animal: Animal
     
     func description() {
-        animal.description()
+        print(animal)
         print("\(animal.name) wiegt \(weight) kg.")
     }
 }

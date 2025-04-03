@@ -23,9 +23,15 @@ final class Snake: Reptile {
         }
     }
     
-    override func description() {
-        print("---Schlange---")
-        super.description()
-        bite()
+//    override func description() {
+//        print("---Schlange---")
+//        super.description()
+//        bite()
+//    }
+    
+    // Aufgabe 4.1 CustomStringConvertible implementieren
+    
+    override var description: String {
+        return "---Schlange---\n\(super.description)"
     }
 }

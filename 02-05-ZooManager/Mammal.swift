@@ -13,8 +13,14 @@ class Mammal: Animal {
     
     // Aufgabe 2.3 Spezialisierung
     
-    override func description() {
-        print("---Säugetier---")
-        super.description()
+//    override func description() {
+//        print("---Säugetier---")
+//        super.description()
+//    }
+    
+    // Aufgabe 4.1 CustomStringConvertible implementieren
+    
+    override var description: String {
+        return "---Säugetier---\n\(super.description)"
     }
 }

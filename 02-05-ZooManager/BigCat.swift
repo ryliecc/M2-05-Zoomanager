@@ -23,9 +23,15 @@ class BigCat: Mammal {
         }
     }
     
-    override func description() {
-        print("---Raubkatze---")
-        super.description()
-        roar()
+//    override func description() {
+//        print("---Raubkatze---")
+//        super.description()
+//        roar()
+//    }
+    
+    // Aufgabe 4.1 CustomStringConvertible implementieren
+    
+    override var description: String {
+        return "---Raubkatze---\n\(super.description)"
     }
 }

@@ -14,4 +14,10 @@ class FreshWaterFish: Fish {
     override init(name: String, age: Double, species: Species, habitat: Habitat = .freshWater) {
         super.init(name: name, age: age, species: species, habitat: habitat)
     }
+    
+    // Aufgabe 4.1 CustomStringConvertible implementieren
+    
+    override var description: String {
+        return "---Süßwasser-Fisch---\n\(super.description)"
+    }
 }

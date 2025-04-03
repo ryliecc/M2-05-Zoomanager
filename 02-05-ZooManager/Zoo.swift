@@ -9,7 +9,7 @@ import Foundation
 
 // Aufgabe 1.3 Zoo modellieren
 
-class Zoo {
+class Zoo: CustomStringConvertible {
     var name: String
     var animals: [Animal] = []
     
@@ -19,13 +19,13 @@ class Zoo {
     
     // Aufgabe 1.4 Beschreibungs-Methoden definieren
     
-    func description() {
-        print("Der Zoo \(name) hat folgende Tiere:")
-        for animal in animals {
-            animal.description()
-        }
-        print("Von \(animals.count) Tieren sind \(amountOfEndangeredAnimals) vom Aussterben bedroht!")
-    }
+    //    func description() {
+    //        print("Der Zoo \(name) hat folgende Tiere:")
+    //        for animal in animals {
+    //            animal.description()
+    //        }
+    //        print("Von \(animals.count) Tieren sind \(amountOfEndangeredAnimals) vom Aussterben bedroht!")
+    //    }
     
     // Aufgabe 1.7 Zoobericht mit Filtermethoden
     
@@ -40,7 +40,7 @@ class Zoo {
         print("Die Tiere im Zoo \(name), die mindestens \(startAge) Jahre alt sind, sind:")
         for animal in animals {
             if animal.age >= startAge {
-                animal.description()
+                print(animal)
             }
         }
     }
@@ -49,7 +49,7 @@ class Zoo {
         print("Folgende Tiere im Zoo \(name) sind vom Aussterben bedroht:")
         for animal in animals {
             if animal.isEndangered {
-                animal.description()
+                print(animal)
             }
         }
     }
@@ -70,12 +70,12 @@ class Zoo {
         print("---Terrarium---")
         for animal in animals {
             if animal is Reptile {
-                animal.description()
+                print(animal)
             }
         }
     }
     
-    // 3.6 Anzahl der bedrohten Tiere im Zoo berechnen
+    // Aufgabe 3.6 Anzahl der bedrohten Tiere im Zoo berechnen
     
     var amountOfEndangeredAnimals: Int {
         var amount: Int = 0
@@ -85,5 +85,16 @@ class Zoo {
             }
         }
         return amount
+    }
+    
+    // Aufgabe 4.1 CustomStringConvertible implementieren
+    
+    var description: String {
+        var returnString: String = "Der Zoo \(name) enthält folgende Tiere:\n"
+        for animal in animals {
+            returnString += animal.description + "\n"
+        }
+        returnString += "Von \(animals.count) Tieren sind \(amountOfEndangeredAnimals) vom Aussterben bedroht!"
+        return returnString
     }
 }
