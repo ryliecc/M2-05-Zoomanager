@@ -94,7 +94,14 @@ class Zoo: CustomStringConvertible {
         for animal in animals {
             returnString += animal.description + "\n"
         }
-        returnString += "Von \(animals.count) Tieren sind \(amountOfEndangeredAnimals) vom Aussterben bedroht!"
+        returnString += "Von \(animals.count) Tieren sind \(amountOfEndangeredAnimals) vom Aussterben bedroht!\nFolgende Gäste besuchen gerade den Zoo:\n"
+        for guest in guests {
+            returnString += guest.description + "\n"
+        }
         return returnString
     }
+    
+    // Aufgabe 4.3 Struct Gast mit Protokoll definieren
+    
+    var guests: [Guest] = []
 }

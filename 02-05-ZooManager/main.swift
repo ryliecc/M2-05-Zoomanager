@@ -27,6 +27,10 @@ let zoo1: Zoo = Zoo(name: "Milele")
 
 let animalInfo1: AnimalInfo = AnimalInfo(weight: 220, animal: bigCat2)
 
+let guest1: Guest = Guest(name: "Miley Cyrus", isVip: true)
+let guest2: Guest = Guest(name: "Michael Meyer", isVip: false)
+let guest3: Guest = Guest(name: "Meredith Grey", isVip: false)
+
 // Aufgabe 1.2 Tier modellieren
 // Instanzen verschoben
 
@@ -105,3 +109,9 @@ print("Der Name von \(snake1.name) in Großbuchstaben ist \(snake1.upperCaseName
 print(snake1.descriptionShort)
 print("Der Name \(snake1.name) ist \(snake1.nameIsShort ? "" : "nicht ")kurz.")
 print("Der Name \(bigCat1.name) ist \(bigCat1.nameIsShort ? "" : "nicht ")kurz.")
+
+// Aufgabe 4.3 Struct Gast mit Protokoll definieren
+// Instanzen verschoben
+
+zoo1.guests = [guest1, guest2, guest3]
+print(zoo1)
