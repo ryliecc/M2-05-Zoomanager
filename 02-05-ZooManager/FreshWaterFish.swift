@@ -11,8 +11,8 @@ import Foundation
 
 class FreshWaterFish: Fish {
     
-    override init(name: String, age: Double, species: Species, habitat: Habitat = .freshWater) {
-        super.init(name: name, age: age, species: species, habitat: habitat)
+    init(name: String, age: Double, species: Species, habitat: Habitat = .freshWater, diet: Diet) {
+        super.init(name: name, age: age, species: species, habitat: habitat, diet: diet)
     }
     
     // Aufgabe 4.1 CustomStringConvertible implementieren

@@ -12,9 +12,9 @@ import Foundation
 class BigCat: Mammal {
     var canRoar: Bool
     
-    init(name: String, age: Double, species: Species, canRoar: Bool, habitat: Habitat = .savanna) {
+    init(name: String, age: Double, species: Species, canRoar: Bool, habitat: Habitat = .savanna, diet: Diet = .carnivore) {
         self.canRoar = canRoar
-        super.init(name: name, age: age, species: species, habitat: habitat)
+        super.init(name: name, age: age, species: species, habitat: habitat, diet: diet)
     }
     
     func roar() {
