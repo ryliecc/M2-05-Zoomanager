@@ -14,3 +14,11 @@ protocol ZooGuest {
     var isVip: Bool { get set }
     func calculateTicketPrice() -> Double
 }
+
+// Aufgabe 4.4 Enum Ernaehrung, Protokoll Fuetterbar
+
+protocol Feadable {
+    var diet: Diet { get }
+    var isFull: Bool { get set }
+    func feed()
+}

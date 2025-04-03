@@ -62,3 +62,11 @@ enum Habitat: String {
     case swamp = "der Sumpf"
     case rainforest = "der Regenwald"
 }
+
+// Aufgabe 4.4 Enum Ernaehrung, Protokoll Fuetterbar
+
+enum Diet {
+    case carnivore
+    case herbivore
+    case omnivore
+}
