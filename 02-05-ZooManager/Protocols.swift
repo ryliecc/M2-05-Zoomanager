@@ -17,7 +17,7 @@ protocol ZooGuest {
 
 // Aufgabe 4.4 Enum Ernaehrung, Protokoll Fuetterbar
 
-protocol Feadable {
+protocol Feedable {
     var diet: Diet { get }
     var isFull: Bool { get set }
     func feed()
