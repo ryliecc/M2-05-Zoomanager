@@ -73,5 +73,13 @@ class Animal: CustomStringConvertible, Feedable {
     
     func feed() {
         isFull = true
+        switch diet {
+        case .carnivore:
+            print("\(name) wird mit Fleich gefüttert.")
+        case .herbivore:
+            print("\(name) wird mit Pflanzen gefüttert.")
+        case .omnivore:
+            print("\(name) wird mit Fleisch und Pflanzen gefüttert.")
+        }
     }
 }

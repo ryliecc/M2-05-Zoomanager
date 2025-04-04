@@ -115,3 +115,9 @@ print("Der Name \(bigCat1.name) ist \(bigCat1.nameIsShort ? "" : "nicht ")kurz."
 
 zoo1.guests = [guest1, guest2, guest3]
 print(zoo1)
+
+// Aufgabe 4.5 Fütterung implementieren
+
+animal1.feed()
+mammal1.feed()
+bigCat1.feed()
